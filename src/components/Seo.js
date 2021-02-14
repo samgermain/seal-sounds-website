@@ -18,8 +18,7 @@ const  SEO = ({ desc, image, url, title, lang }) => {
       <meta charSet="utf-8" />
       <link rel="canonical" href={url} />
 
-      <script defer src={`https://www.google.com/recaptcha/api.js?render=6Le1Y1caAAAAAE-SskS-F9EHwsxdwi_MlJN5UF8q`} ></script>
-      
+      <script defer src={`https://www.google.com/recaptcha/api.js? r=${Math.random()}`} ></script>
 
       {/* <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />;//* img-src https://*; child-src 'none';"> */}
       {/* <meta name="google-site-verification" content="6Le1Y1caAAAAAE-SskS-F9EHwsxdwi_MlJN5UF8q" /> */}
