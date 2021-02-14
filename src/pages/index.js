@@ -12,7 +12,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon,  } from '@fortawesome/react-fontawesome'
 import Image from "gatsby-image";
-import SEO from "../components/seo";
+import SEO from "../components/Seo";
 import EmailForm from "../components/EmailForm";
 
 const styles = {
@@ -41,7 +41,7 @@ const styles = {
 };
 
 const IndexPage = ({data}) => {
-    console.log(data)
+
     const {
         sealIcon:{
             childImageSharp:{
@@ -52,7 +52,12 @@ const IndexPage = ({data}) => {
 
     return (
         <div >
-            <SEO title="Seal Sounds Mobile App" />
+            <SEO 
+                title="Seal Sounds Mobile App"
+                desc="Seal Sounds, a must have mobile app that lets you hear seal voices!"
+                image="https://sealsounds.netlify.app/static/74eacaa540ff549006a61adccc5500e1/73c85/seal-icon-transparent.png"
+                url="https://sealsounds.netlify.app"
+            />
             <div dangerouslySetInnerHTML={{ __html: `
             <video
                 loop
