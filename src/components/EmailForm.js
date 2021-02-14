@@ -28,7 +28,7 @@ export default ({className} ) => {
 //        const [serviceId, templateId, userId] = ['gmail', 'contactform', 'user_1vdH1saKOwWgYvrTaAnpV']
         e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
         console.log(e.target)
-        emailjs.send('gmail', 'emailform', formInput, 'user_1vdH1saKOwWgYvrTaAnpV').then((result) => {
+        emailjs.send('gmail', 'emailform', formInput, 'user_QH9yiKWNyZsxxMXp6mpBZ').then((result) => {
             window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
         }, (error) => {
             console.log(error.text);
