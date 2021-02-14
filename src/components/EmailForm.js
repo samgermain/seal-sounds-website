@@ -6,10 +6,10 @@ import emailjs from 'emailjs-com';
 export default ({className} ) => {
 
     const formInput = {
-        "from_name": "",
-        "email_subject": "",
-        "from_email": "",
-        "html_message": ""
+        from_name: "",
+        email_subject: "",
+        from_email: "",
+        html_message: ""
     };
 
     const FormInput = ({label, children}) => (
@@ -36,7 +36,7 @@ export default ({className} ) => {
     };
 
     return (
-        <form method="post" id='emailForm' className={className} onSubmit={sendEmail}>
+        <form method="post" id='emailform' className={className} onSubmit={sendEmail}>
             <FormInput label="Name">
                 <input
                     className="form-control"
