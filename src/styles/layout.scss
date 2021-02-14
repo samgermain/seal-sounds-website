@@ -1,0 +1,82 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.background-video{
+    height: auto;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    margin: 0;
+    object-fit: cover;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+#text{
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    height: 100vh;
+    width: 100vw;
+}
+
+#links{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#app-store-link, #google-play-link{
+    margin-bottom: 100px;
+    text-decoration: none;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app-store-link{
+    margin-left: 5%;
+}
+
+#google-play-link{
+    margin-right: 5%;
+}
+
+.link-text{
+    font-size: 1.5em;
+}
+
+.iconify{
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+#cover {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    background: #000;
+    z-index:9999;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 200px;
+    color: #fff;
+}
