@@ -65,7 +65,7 @@ const IndexPage = ({data}) => {
             `}}>
             </div>
             <div className="d-flex flex-column">
-            <div id='container' style={{backgroundColor: "black"}}>
+            <div id='container'>
                 <div id="spinning-circle">
                     <div id="inner-circle">
                         <Image
