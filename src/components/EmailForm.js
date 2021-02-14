@@ -51,7 +51,7 @@ export default ({className, page} ) => {
     // };
 
     return (
-        <form id='emailForm' className={className} onSubmit={sendEmail}>
+        <form method="post" id='emailForm' className={className} onSubmit={sendEmail}>
             {['Name', 'Email', 'Subject', 'Message'].map(label => (
                 <div className='row text-right form-group' >
                     <label className="col-sm-2" >
