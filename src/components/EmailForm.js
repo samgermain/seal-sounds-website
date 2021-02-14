@@ -30,7 +30,7 @@ export default ({className, page} ) => {
     const sendEmail = function(e){
 //        const [serviceId, templateId, userId] = ['gmail', 'contactform', 'user_1vdH1saKOwWgYvrTaAnpV']
         e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
-        emailjs.sendForm('gmail', 'contactform', e.target, 'user_1vdH1saKOwWgYvrTaAnpV').then((result) => {
+        emailjs.sendForm('service_pxcel8w', 'contactform', e.target, 'user_1vdH1saKOwWgYvrTaAnpV').then((result) => {
             window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
         }, (error) => {
             console.log(error.text);
@@ -68,7 +68,7 @@ export default ({className, page} ) => {
                     sitekey="6LdKLgAVAAAAAKBKZDMHG19KWA1b3sQoB0OLakZU"
                     callback={verifyCallback}
                 /> */}
-                <div className="m-auto m-sm-0 g-recaptcha" data-sitekey="6Le1Y1caAAAAANYsBmgeDlRPpXYAR0_tvu09frSs"></div>
+                <div className="m-auto m-sm-0 g-recaptcha" data-sitekey="6Le1Y1caAAAAAE-SskS-F9EHwsxdwi_MlJN5UF8q"></div>
                 <div className='form-group ml-auto mb-md-auto'>
                     <button className='btn btn-primary mt-2 mt-sm-0 mr-2' type="submit">Submit</button>
                 </div>
