@@ -15,8 +15,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-preact`,
-    // `gatsby-plugin-netlify`,
+    // `gatsby-plugin-preact`,
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,
