@@ -73,7 +73,7 @@ export default ({className} ) => {
                 />
             </FormInput>
             <div className='row ml-auto col-sm-10'>
-                <div className="m-auto m-sm-0 g-recaptcha" data-sitekey="6Le1Y1caAAAAAE-SskS-F9EHwsxdwi_MlJN5UF8q"></div>
+                {/* <div className="m-auto m-sm-0 g-recaptcha" data-sitekey="6Le1Y1caAAAAAE-SskS-F9EHwsxdwi_MlJN5UF8q"></div> */}
                 <div className='form-group ml-auto mb-md-auto'>
                     <button className='btn btn-primary mt-2 mt-sm-0 mr-2' type="submit">Submit</button>
                 </div>
