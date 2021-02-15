@@ -14,16 +14,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    { 
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        // printRejected: true, // Print removed selectors and processed file names
-        purgeOnly: [ 'node_modules/'],
-        ignore: ['node_modules/@fortawesome'],
-        // whitelist: [],
-        // whitelistPatterns: []
-      }
-    },
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     {
@@ -45,7 +35,7 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         // printRejected: true, // Print removed selectors and processed file names
-        purgeOnly: ['src/styles', 'src/components','node_modules/'],
+        // purgeOnly: ['src/styles', 'src/components','node_modules/'],
         ignore: ['node_modules/@fortawesome'],
         whitelist: [],
         whitelistPatterns: []
