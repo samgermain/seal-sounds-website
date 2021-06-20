@@ -51,3 +51,80 @@
         transform: rotate(360deg);
     }
 }
+
+#seal-with-whiskers {
+  max-width: 40vw;
+  /* max-height: 0vh; */
+}
+
+@media (max-width: 778px){
+    #seal-with-whiskers {
+        max-width: 80vw;
+        
+    }      
+}
+
+.shadow {
+    box-shadow: 5px 10px inset;
+}
+
+.whisker {
+ fill: none;
+ stroke: #fff;
+ stroke-width: 5px;
+}
+
+#seal-whiskers-head {
+
+  animation: spin 8s linear infinite;
+  -webkit-animation: spin 8s linear infinite;
+  -moz-animation: spin 8s linear infinite;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@keyframes spin{
+  68% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    transform: rotate(-20deg); 
+  }
+  98% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    transform: rotate(-20deg); 
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes bounce {
+    0% { transform: translateY(-5px)  }
+    50% { transform: translateY(10px) }
+    100% { transform: translateY(-5px) }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(-5px)  }
+    50% { transform: translateY(10px) }
+    100% { transform: translateY(-5px) }
+}
+
+#seal {
+    -webkit-animation: bounce 4s infinite ease-in-out;
+    -o-animation: bounce 4s infinite ease-in-out;
+    -ms-animation: bounce 4s infinite ease-in-out; 
+    -moz-animation: bounce 4s infinite ease-in-out; 
+    animation: bounce 4s infinite ease-in-out;
+    animation-delay: 0.5s;
+    overflow: visible;
+    max-width: 35vw;
+}

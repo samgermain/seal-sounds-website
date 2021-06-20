@@ -11,9 +11,7 @@ import {
     faAppStore
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon,  } from '@fortawesome/react-fontawesome'
-import Image from "gatsby-image";
-import SEO from "../components/Seo";
-import EmailForm from "../components/EmailForm";
+import {EmailForm, Seo, Seal2Animation, Seal1Animation} from '../components'
 
 const styles = {
     bottom:{
@@ -52,32 +50,28 @@ const IndexPage = ({data}) => {
 
     return (
         <div >
-            <SEO 
+            <Seo 
                 title="Seal Sounds Mobile App"
                 desc="Seal Sounds, a must have mobile app that lets you hear seal voices!"
                 image="https://sealsounds.netlify.app/static/74eacaa540ff549006a61adccc5500e1/73c85/seal-icon-transparent.png"
                 url="https://sealsounds.netlify.app"
             />
             <div dangerouslySetInnerHTML={{ __html: `
-            <video
-                loop
-                muted
-                autoplay
-                playsinline
-                src="https://seal-sounds.s3.us-east-2.amazonaws.com/flashy-star-background.webm"
-                class='background-video'
-            ></video>
+                <video
+                    loop
+                    muted
+                    autoplay
+                    playsinline
+                    src="https://seal-sounds.s3.us-east-2.amazonaws.com/flashy-star-background.webm"
+                    class='background-video'
+                ></video>
             `}}>
             </div>
             <div className="d-flex flex-column">
             <div id='container'>
                 <div id="spinning-circle">
                     <div id="inner-circle">
-                        <Image
-                            className=".img"
-                            fluid={sealImageProps}
-                            alt="A transparent background vector graphic of a seal"
-                        />
+                        <Seal1Animation />
                     </div>
                 </div>
             </div>
@@ -113,10 +107,12 @@ const IndexPage = ({data}) => {
                         
                     </div>
                 </div>
-                <div style={styles.emailForm} className="d-flex flex-column align-items-center justify-content-between">
-                    <div className="col-md-8 col-11 mx-auto"><EmailForm /></div>
-                    <Link to="/Privacy">Privacy Policy</Link>
-                </div>
+                    <div style={styles.emailForm} className="d-flex flex-column align-items-center justify-content-between">
+                        <div className="col-md-8 col-11 mx-auto"><EmailForm /></div>
+                        <Link className="mb-5" to="/Privacy">Privacy Policy</Link>
+                        {/* <div style={{height: '100px'}}></div> */}
+                        <Seal2Animation className="mt-5" />
+                    </div>
                 </div>
                 {/* <div id="cover">LOADING</div> */}
             </div>
