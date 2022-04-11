@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+const Privacy = () => (
     <div className="p-5">
     <strong>Privacy Policy</strong> <p>
                   Sam Germain built the Seal Sounds app as
@@ -103,3 +103,5 @@ export default () => (
     </div>
       
 );
+
+export default Privacy;

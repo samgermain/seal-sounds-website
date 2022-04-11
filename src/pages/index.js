@@ -34,13 +34,13 @@ const styles = {
 
 const IndexPage = ({data}) => {
 
-    const {
-        sealIcon:{
-            childImageSharp:{
-                fluid: sealImageProps
-            }
-        }
-    } = data;
+    // const {
+    //     sealIcon:{
+    //         childImageSharp:{
+    //             fluid: sealImageProps
+    //         }
+    //     }
+    // } = data;
 
     return (
         <div >

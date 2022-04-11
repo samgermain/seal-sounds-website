@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 // import ReCaptcha, { Loader } from "@pittica/gatsby-plugin-recaptcha"
 // var Recaptcha = require('react-recaptcha');
 
-export default ({className} ) => {
+const EmailForm = ({className}) => {
 
     const formInput = {
         from_name: "",
@@ -13,7 +13,7 @@ export default ({className} ) => {
     };
 
     const FormInput = ({label, children}) => (
-        <div className='row text-right form-group' >
+        <div className='row text-end form-group' >
             <label className="col-sm-2" >
                 {label}
             </label>
@@ -72,12 +72,18 @@ export default ({className} ) => {
                     onChange={e => formInput.html_message = e.target.value}
                 />
             </FormInput>
-            <div className='row ml-auto col-sm-10'>
+            <div className='row ml-auto col-sm-10' style={{marginLeft: "auto"}}>
                 {/* <div className="m-auto m-sm-0 g-recaptcha" data-sitekey="6Le1Y1caAAAAAE-SskS-F9EHwsxdwi_MlJN5UF8q"></div> */}
-                <div className='form-group ml-auto mb-md-auto'>
-                    <button className='btn btn-primary mt-2 mt-sm-0 mr-2' type="submit">Submit</button>
+                <div className='form-group ml-auto mb-md-auto d-flex'>
+                    <button 
+                        style={{marginLeft: "auto", marginRight: '1.5em'}} 
+                        className='btn btn-primary mt-3 ml-auto mr-5' 
+                        type="submit"
+                    >Submit</button>
                 </div>
             </div>
         </form>
     );
 };
+
+export default EmailForm;

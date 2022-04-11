@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+const Terms = () => (
     <div>
     <strong>Terms &amp; Conditions</strong> <p>
                   By downloading or using the app, these terms will
@@ -107,3 +107,5 @@ export default () => (
     </div>
       
 );
+
+export default Terms;

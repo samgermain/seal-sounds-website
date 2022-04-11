@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+const Seal2Animation = () => (
   <svg title="A seal illustration" desc="A seal with whiskers that waves at you, tilts it's head and flares it's nostrils" id="seal-with-whiskers" viewBox="0 0 1910 1113" style={{fillRule: 'evenodd', clipRule: 'evenodd', strokeLinecap: 'round', strokeLinejoin: 'round', strokeMiterlimit: '1.5'}}>
     <g>
       <path d="M496.869,1106.54c-936.115,-276.32 -445.932,-1198.94 610.573,-1099.01c141.761,13.407 344.801,137.914 423.809,158.335c55.277,14.288 281.051,363.5 172.698,487.198c-13.2,-127.68 -115.236,-198.081 -235.343,-393.036c-0.245,7.926 230.023,251.661 236.487,405.687c3.23,76.977 10.495,279.073 -45.45,331.904c-28.741,27.14 -174.186,122.363 -184.843,79.423c-123.753,-24.467 -392.631,57.009 -977.931,29.502Z" style={{fill: '#dddad3'}}>
@@ -87,3 +87,5 @@ export default () => (
     </g>
   </svg>
 );
+
+export default Seal2Animation;

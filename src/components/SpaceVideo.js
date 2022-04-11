@@ -1,4 +1,6 @@
-export default () => ( 
+import React from 'react';
+
+const SpaceVideo = () => ( 
     <div dangerouslySetInnerHTML = {
         { __html: `
                 <video
@@ -13,3 +15,5 @@ export default () => (
     } >
     </div>
 );
+
+export default SpaceVideo;

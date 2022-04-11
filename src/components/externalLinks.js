@@ -6,6 +6,7 @@ import {
     faAppStore
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon,  } from '@fortawesome/react-fontawesome'
+import React from 'react';
 
 export const FBLink = () => (
     <a href="https://www.facebook.com/SealSounds">
@@ -27,7 +28,7 @@ export const LinkedInLink = () => (
 
 export const AppStoreLink = () => (
     <a 
-        href="#" 
+        href="/"
         id="app-store-link" 
         disabled={true}
     >
