@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: `Bug Voyage`,
-        description: `Bug catching`,
+        title: `Seal Sounds`,
+        description: `Seal Soumds`,
         author: `Sam Germain`,
     },
     plugins: [
@@ -11,6 +11,13 @@ module.exports = {
             options: {
                 name: `images`,
                 path: `${__dirname}/src/assets/images`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              name: `sounds`,
+              path: `${__dirname}/src/assets/sounds`,
             },
         },
         `gatsby-transformer-sharp`,
@@ -39,6 +46,6 @@ module.exports = {
                 whitelist: [],
                 whitelistPatterns: []
             }
-        }
+        },
     ],
 }
