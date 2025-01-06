@@ -32,6 +32,55 @@ const styles = {
     }
 };
 
+const SocialLinks = () => (
+    <div className="w-100 d-flex align-items-center justify-content-center">
+        <div style={styles.bottom}>
+            <div 
+                style={styles.icons} 
+                className="d-flex justify-content-between align-items-center mb-3"
+            >
+                <FBLink />
+                <TwitterLink />
+                <LinkedInLink />
+            </div>               
+        </div>
+    </div>
+);
+
+const MainSealAnimation = () => (
+    <div id='container'>
+        <div id="spinning-circle">
+            <div id="inner-circle">
+                <Seal1Animation />
+            </div>
+        </div>
+    </div>
+);
+
+const App = () => (
+    <>
+        <h1 style={styles.title}>Download Seal Sounds</h1>
+        <div id="links">
+            <AppStoreLink />
+            <GooglePlayLink />
+        </div>
+        <SocialLinks />
+    </>
+)
+
+const EmailPrivacyPolicy = () => (
+    <div 
+        style={styles.emailForm} 
+        className="d-flex flex-column align-items-center justify-content-between"
+    >
+        <div className="col-md-8 col-11 mx-auto">
+            <EmailForm />
+        </div>
+        <Link className="mb-5" to="/Privacy">Privacy Policy</Link>
+        <Seal2Animation className="mt-5" />
+    </div>
+);
+
 const IndexPage = ({data}) => {
 
     // const {
@@ -53,41 +102,10 @@ const IndexPage = ({data}) => {
             <div>
                 <SpaceVideo />
                 <div className="d-flex flex-column">
-                    <div id='container'>
-                        <div id="spinning-circle">
-                            <div id="inner-circle">
-                                <Seal1Animation />
-                            </div>
-                        </div>
-                    </div>
+                    <MainSealAnimation />
                     <div id="text" className="mt-2">
-                        <h1 style={styles.title}>Download Seal Sounds</h1>
-                        <div id="links">
-                            <AppStoreLink />
-                            <GooglePlayLink />
-                        </div>
-                        <div className="w-100 d-flex align-items-center justify-content-center">
-                            <div style={styles.bottom}>
-                                <div 
-                                    style={styles.icons} 
-                                    className="d-flex justify-content-between align-items-center mb-3"
-                                >
-                                    <FBLink />
-                                    <TwitterLink />
-                                    <LinkedInLink />
-                                </div>               
-                            </div>
-                        </div>
-                        <div 
-                            style={styles.emailForm} 
-                            className="d-flex flex-column align-items-center justify-content-between"
-                        >
-                            <div className="col-md-8 col-11 mx-auto">
-                                <EmailForm />
-                            </div>
-                            <Link className="mb-5" to="/Privacy">Privacy Policy</Link>
-                            <Seal2Animation className="mt-5" />
-                        </div>
+                        <App />
+                        <EmailPrivacyPolicy />
                     </div>
                     {/* <div id="cover">LOADING</div> */}
                 </div>
