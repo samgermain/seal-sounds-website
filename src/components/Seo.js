@@ -9,8 +9,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 
-const  SEO = ({ desc, image, url, title, lang }) => {
-
+const  SEO = ({ 
+  desc = `en`,
+  image = "Seal Sounds Mobile App",
+  url = "Seal Sounds, a must have mobile app that lets you hear seal voices!",
+  title = "https://sealsounds.netlify.app/static/74eacaa540ff549006a61adccc5500e1/73c85/seal-icon-transparent.png",
+  lang = "https://sealsounds.netlify.app",
+}) => {
 
   return (
     <Helmet htmlAttributes={{ lang: "en" }}> 
@@ -40,14 +45,6 @@ const  SEO = ({ desc, image, url, title, lang }) => {
       <meta name="twitter:card" content="summary" />
     </Helmet>
   )
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  title: "Seal Sounds Mobile App",
-  desc: "Seal Sounds, a must have mobile app that lets you hear seal voices!",
-  image: "https://sealsounds.netlify.app/static/74eacaa540ff549006a61adccc5500e1/73c85/seal-icon-transparent.png",
-  url: "https://sealsounds.netlify.app"
 }
 
 SEO.propTypes = {

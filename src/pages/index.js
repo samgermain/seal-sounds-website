@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import '../styles/layout.scss';
 import '../styles/animation.scss';
 import { Link, graphql } from "gatsby";
 
-import {EmailForm, Seo, Seal2Animation, Seal1Animation} from '../components'
+import {EmailForm, Seo, Seal2Animation, Seal1Animation, Soundboard, soundFiles} from '../components'
 import SpaceVideo from "../components/SpaceVideo";
 import { FBLink, TwitterLink, LinkedInLink, GooglePlayLink, AppStoreLink } from "../components/externalLinks";
 
@@ -47,16 +47,6 @@ const SocialLinks = () => (
     </div>
 );
 
-const MainSealAnimation = () => (
-    <div id='container'>
-        <div id="spinning-circle">
-            <div id="inner-circle">
-                <Seal1Animation />
-            </div>
-        </div>
-    </div>
-);
-
 const App = () => (
     <>
         <h1 style={styles.title}>Download Seal Sounds</h1>
@@ -81,6 +71,12 @@ const EmailPrivacyPolicy = () => (
     </div>
 );
 
+// for (sealType, soundList) of Object.entries(soundNames) {
+//     for (name in soundList) {
+//         import 
+//     }
+// }
+
 const IndexPage = ({data}) => {
 
     // const {
@@ -91,8 +87,19 @@ const IndexPage = ({data}) => {
     //     }
     // } = data;
 
+    const [ sealType, setSealType ] = useState('Weddell');
+
+    const SealTypeButton = ({name}) => (
+        <button
+            className="seal-type-button"
+            onClick={() => setSealType(name)}
+        >
+            {name}
+        </button>
+    );
+
     return (
-        <div >
+        <div style={{backgroundColor: "black"}}>
             <Seo 
                 title="Seal Sounds Mobile App"
                 desc="Seal Sounds, a must have mobile app that lets you hear seal voices!"
@@ -100,12 +107,28 @@ const IndexPage = ({data}) => {
                 url="https://sealsounds.netlify.app"
             />
             <div>
-                <SpaceVideo />
                 <div className="d-flex flex-column">
-                    <MainSealAnimation />
-                    <div id="text" className="mt-2">
-                        <App />
-                        <EmailPrivacyPolicy />
+                    <div style={{height: "100px"}} className="d-flex justify-content-between align-items-center w-100 px-5">
+                        <SealTypeButton name="Grey"></SealTypeButton>
+                        <span className="divider">|</span>
+                        <SealTypeButton name="Weddell"></SealTypeButton>
+                        <span className="divider">|</span>
+                        <SealTypeButton name="Harp"></SealTypeButton>
+                    </div>
+                    <Soundboard sounds={soundFiles[sealType]}></Soundboard>
+                    <div className="position-relative">
+                        <SpaceVideo />
+                        <div id='container'>
+                            <div id="text" className="mt-2">
+                                <App />
+                                <EmailPrivacyPolicy />
+                            </div>
+                            <div id="spinning-circle">
+                                <div id="inner-circle">
+                                    <Seal1Animation />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     {/* <div id="cover">LOADING</div> */}
                 </div>

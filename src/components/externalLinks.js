@@ -42,8 +42,10 @@ export const GooglePlayLink = () => (
     <a
         href="https://play.google.com/store/apps/details?id=com.samgermain.sealsoundsapp&hl=en"
         id="google-play-link"
+        disabled={true}
     >
         <FontAwesomeIcon size="2x" icon={faGooglePlay} />
         <span className="link-text">Google Play</span>
+        <span>Currently Unavailable</span>
     </a>
 );
