@@ -4,9 +4,9 @@ import {Seo} from '../components'
 const Terms = () => (
     <div>
       <Seo 
-        title="Seal Sounds Mobile App | Terms and Conditions"
+        title="Seal Sounds | Terms and Conditions"
         desc="Seal Sounds, a must have mobile app that lets you hear seal voices!"
-        image="https://sealsounds.netlify.app/static/fefaa2ae86fc90bac38df5dd68d88ef3/f3583/seal-with-whiskers.png"
+        image="https://sealsounds.netlify.app/static/95dc766cf62d4841a4f3b5f9099150a4/f3583/seal-with-whiskers.png"
         url="https://sealsounds.netlify.app/Terms"
       />
     <strong>Terms &amp; Conditions</strong> <p>
