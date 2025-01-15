@@ -6,7 +6,7 @@ const Privacy = () => (
       <Seo 
         title="Seal Sounds Mobile App | Privacy Policy"
         desc="Seal Sounds, a must have mobile app that lets you hear seal voices!"
-        image="https://sealsounds.netlify.app/static/74eacaa540ff549006a61adccc5500e1/73c85/seal-icon-transparent.png"
+        image="https://sealsounds.netlify.app/static/fefaa2ae86fc90bac38df5dd68d88ef3/f3583/seal-with-whiskers.png"
         url="https://sealsounds.netlify.app/Privacy"
       />
     <strong>Privacy Policy</strong> 

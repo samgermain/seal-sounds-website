@@ -103,7 +103,7 @@ const IndexPage = ({data}) => {
             <Seo 
                 title="Seal Sounds Mobile App"
                 desc="Seal Sounds, a must have mobile app that lets you hear seal voices!"
-                image="https://sealsounds.netlify.app/static/74eacaa540ff549006a61adccc5500e1/73c85/seal-icon-transparent.png"
+                image="https://sealsounds.netlify.app/static/fefaa2ae86fc90bac38df5dd68d88ef3/f3583/seal-with-whiskers.png"
                 url="https://sealsounds.netlify.app"
             />
             <div>
@@ -141,9 +141,9 @@ export default IndexPage;
 
 export const query = graphql`
     query MyQuery {
-        sealIcon: file(name: {eq: "seal-icon-transparent"}) {
+        sealIcon: file(name: {eq: "seal-with-whiskers"}) {
             childImageSharp {
-                fluid(maxWidth: 700) {
+                fluid(maxWidth: 1200) {
                     ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
             }
