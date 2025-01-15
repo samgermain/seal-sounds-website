@@ -18,7 +18,7 @@ class HarpScreen extends React.Component{
             sounds: [
                 ["Ag", "/assets/sounds/Harp/Ag"], 
                 ["baGAA", "/assets/sounds/Harp/baGAA"], 
-                ["GreenDay", "/assets/sounds/Harp/GreenDay"], 
+                ["Green_Day", "/assets/sounds/Harp/Green_Day"], 
                 ["Hallelujah", "/assets/sounds/Harp/Hallelujah"], 
                 ["Ma", "/assets/sounds/Harp/Ma"], 
                 ["Mom", "/assets/sounds/Harp/Mom"], 

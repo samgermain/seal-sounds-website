@@ -5,7 +5,7 @@ import C from '../assets/sounds/Grey/C.mp3';
 import C_Sharp from '../assets/sounds/Grey/C_Sharp.mp3';
 import C_slight_sharp from '../assets/sounds/Grey/C_slight_sharp.mp3';
 import D from '../assets/sounds/Grey/D.mp3';
-import D_D_Sharp from '../assets/sounds/Grey/D_D_Sharp.mp3';
+import D_Sharp from '../assets/sounds/Grey/D_Sharp.mp3';
 import D_Other_Seal from '../assets/sounds/Grey/D_Other_Seal.mp3';
 import E from '../assets/sounds/Grey/E.mp3';
 import Eb from '../assets/sounds/Grey/Eb.mp3';
@@ -19,7 +19,7 @@ import Metal_3 from '../assets/sounds/Grey/Metal_3.mp3';
 import Screemo from '../assets/sounds/Grey/Screemo.mp3';
 import Screemo_2 from '../assets/sounds/Grey/Screemo_2.mp3';
 import Ag from '../assets/sounds/Harp/Ag.mp3';
-import GreenDay from '../assets/sounds/Harp/GreenDay.mp3';
+import Green_Day from '../assets/sounds/Harp/Green_Day.mp3';
 import Hallelujah from '../assets/sounds/Harp/Hallelujah.mp3';
 import Ma from '../assets/sounds/Harp/Ma.mp3';
 import Mom from '../assets/sounds/Harp/Mom.mp3';
@@ -103,7 +103,7 @@ const sounds = {
         { name: 'C_Sharp', file: C_Sharp},
         { name: 'C_slight_sharp', file: C_slight_sharp},
         { name: 'D', file: D},
-        { name: 'D_D_Sharp', file: D_D_Sharp},
+        { name: 'D_Sharp', file: D_Sharp},
         { name: 'D_Other_Seal', file: D_Other_Seal},
         { name: 'E', file: E},
         { name: 'Eb', file: Eb},
@@ -119,7 +119,7 @@ const sounds = {
     ],
     'Harp': [
         { name: 'Ag', file: Ag},
-        { name: 'GreenDay', file: GreenDay},
+        { name: 'Green_Day', file: Green_Day},
         { name: 'Hallelujah', file: Hallelujah},
         { name: 'Ma', file: Ma},
         { name: 'Mom', file: Mom},

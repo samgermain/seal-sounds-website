@@ -24,7 +24,7 @@ class GreyScreen extends React.Component{
                 ["D Other Seal", "/assets/sounds/Grey/D_Other_Seal"], 
                 ["C slight sharp", "/assets/sounds/Grey/C_slight_sharp"], 
                 ["D", "/assets/sounds/Grey/D"], 
-                ["D/D#", "/assets/sounds/Grey/D_D_Sharp"], 
+                ["D/D#", "/assets/sounds/Grey/D_Sharp"], 
                 ["E", "/assets/sounds/Grey/E"], 
                 ["Eb", "/assets/sounds/Grey/Eb"], 
                 ["Screemo", "/assets/sounds/Grey/Screemo", "premium"], 

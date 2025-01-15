@@ -1,20 +1,20 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 
 const SoundButton = ({name, file}) => {
 
-    let audio = undefined;
+    let audio = useRef(null);;
 
     useEffect(() => {
-        audio = new Audio(file);
+        audio.current = new Audio(file);
     }, []);
 
     const playAudio = () => {
-        audio.play();
+        audio.current.play();
     }
 
     return (
         <button className="btn btn-primary rounded sound-button" onClick={playAudio}>
-            {name}
+            {name.replace(/_/g, " ")}
         </button>
     );
 };
@@ -24,9 +24,7 @@ const SoundBoard = ({sounds}) => (
             className='soundboard'
         >
             {sounds.map (({name, file}) => (
-                <SoundButton key={name} name={name} file={file}>
-                    name
-                </SoundButton>
+                <SoundButton key={name} name={name} file={file} />
             ))}
         </div>
 );
