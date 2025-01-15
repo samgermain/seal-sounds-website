@@ -16,26 +16,26 @@ class GreyScreen extends React.Component{
         store.dispatch(setNavigation({navigation:this.props.navigation}))
         store.dispatch(setSounds({
             sounds: [
-                ["A", "/assets/Sounds/Grey/A"], 
-                ["B", "/assets/Sounds/Grey/B"], 
-                ["B/C", "/assets/Sounds/Grey/B_C"], 
-                ["C#", "/assets/Sounds/Grey/C_Sharp"], 
-                ["C", "/assets/Sounds/Grey/C"], 
-                ["D Other Seal", "/assets/Sounds/Grey/D_Other_Seal"], 
-                ["C slight sharp", "/assets/Sounds/Grey/C_slight_sharp"], 
-                ["D", "/assets/Sounds/Grey/D"], 
-                ["D/D#", "/assets/Sounds/Grey/D_D_Sharp"], 
-                ["E", "/assets/Sounds/Grey/E"], 
-                ["Eb", "/assets/Sounds/Grey/Eb"], 
-                ["Screemo", "/assets/Sounds/Grey/Screemo", "premium"], 
-                ["Screemo 2", "/assets/Sounds/Grey/Screemo_2", "premium"], 
-                ["Metal", "/assets/Sounds/Grey/Metal", "premium"], 
-                ["Metal 2", "/assets/Sounds/Grey/Metal_2", "premium"], 
-                ["Metal 3", "/assets/Sounds/Grey/Metal_3", "premium"], 
-                ["H Metal", "/assets/Sounds/Grey/H_Metal", "premium"], 
-                ["H Metal 2", "/assets/Sounds/Grey/H_Metal_2", "premium"], 
-                ["H Metal 3", "/assets/Sounds/Grey/H_Metal_3", "premium"], 
-                ["H Metal 4", "/assets/Sounds/Grey/H_Metal_4", "premium"]
+                ["A", "/assets/sounds/Grey/A"], 
+                ["B", "/assets/sounds/Grey/B"], 
+                ["B/C", "/assets/sounds/Grey/B_C"], 
+                ["C#", "/assets/sounds/Grey/C_Sharp"], 
+                ["C", "/assets/sounds/Grey/C"], 
+                ["D Other Seal", "/assets/sounds/Grey/D_Other_Seal"], 
+                ["C slight sharp", "/assets/sounds/Grey/C_slight_sharp"], 
+                ["D", "/assets/sounds/Grey/D"], 
+                ["D/D#", "/assets/sounds/Grey/D_D_Sharp"], 
+                ["E", "/assets/sounds/Grey/E"], 
+                ["Eb", "/assets/sounds/Grey/Eb"], 
+                ["Screemo", "/assets/sounds/Grey/Screemo", "premium"], 
+                ["Screemo 2", "/assets/sounds/Grey/Screemo_2", "premium"], 
+                ["Metal", "/assets/sounds/Grey/Metal", "premium"], 
+                ["Metal 2", "/assets/sounds/Grey/Metal_2", "premium"], 
+                ["Metal 3", "/assets/sounds/Grey/Metal_3", "premium"], 
+                ["H Metal", "/assets/sounds/Grey/H_Metal", "premium"], 
+                ["H Metal 2", "/assets/sounds/Grey/H_Metal_2", "premium"], 
+                ["H Metal 3", "/assets/sounds/Grey/H_Metal_3", "premium"], 
+                ["H Metal 4", "/assets/sounds/Grey/H_Metal_4", "premium"]
             ]
         }))
     }
