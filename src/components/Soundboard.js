@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 const SoundButton = ({name, file}) => {
 
-    const audio = new Audio(file);
+    let audio = undefined;
+
+    useEffect(() => {
+        audio = new Audio(file);
+    }, []);
 
     const playAudio = () => {
         audio.play();
