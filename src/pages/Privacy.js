@@ -1,7 +1,14 @@
 import React from 'react';
+import {Seo} from '../components'
 
 const Privacy = () => (
     <div className="p-5">
+      <Seo 
+        title="Seal Sounds Mobile App | Privacy Policy"
+        desc="Seal Sounds, a must have mobile app that lets you hear seal voices!"
+        image="https://sealsounds.netlify.app/static/74eacaa540ff549006a61adccc5500e1/73c85/seal-icon-transparent.png"
+        url="https://sealsounds.netlify.app/Privacy"
+      />
     <strong>Privacy Policy</strong> <p>
                   Sam Germain built the Seal Sounds app as
                   an Ad Supported app. This SERVICE is provided by

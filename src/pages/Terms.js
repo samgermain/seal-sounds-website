@@ -1,7 +1,14 @@
 import React from 'react';
+import {Seo} from '../components'
 
 const Terms = () => (
     <div>
+      <Seo 
+        title="Seal Sounds Mobile App | Terms and Conditions"
+        desc="Seal Sounds, a must have mobile app that lets you hear seal voices!"
+        image="https://sealsounds.netlify.app/static/74eacaa540ff549006a61adccc5500e1/73c85/seal-icon-transparent.png"
+        url="https://sealsounds.netlify.app/Terms"
+      />
     <strong>Terms &amp; Conditions</strong> <p>
                   By downloading or using the app, these terms will
                   automatically apply to you – you should make sure therefore

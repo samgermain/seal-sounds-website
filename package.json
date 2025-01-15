@@ -51,6 +51,7 @@
         "sass": "^1.83.1"
     },
     "devDependencies": {
+        "@types/react-helmet": "^6.1.11",
         "prettier": "^2.6.2"
     }
 }
