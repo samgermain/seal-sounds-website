@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 const  SEO = ({ 
   desc = "Seal Sounds, a must have mobile app that lets you hear seal voices!",
-  image = "https://sealsounds.netlify.app/static/74eacaa540ff549006a61adccc5500e1/73c85/seal-icon-transparent.png",
+  image = "https://sealsounds.netlify.app/static/fefaa2ae86fc90bac38df5dd68d88ef3/f3583/seal-with-whiskers.png",
   url = "https://sealsounds.netlify.app",
   title = "Seal Sounds",
   lang = 'en',
@@ -35,6 +35,8 @@ const  SEO = ({
       <meta property='og:description' content={desc} />
       <meta property='og:type' content='website' />
       <meta property="og:image" content={image} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       {/* <meta property="og:image:alt" content="Seal Sounds logo" key="og:image:alt" />, */}
       
       <meta name='twitter:title' content={title} />
