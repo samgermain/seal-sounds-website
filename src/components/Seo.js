@@ -35,8 +35,6 @@ const  SEO = ({
       <meta property='og:description' content={desc} />
       <meta property='og:type' content='website' />
       <meta property="og:image" content={image} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
       {/* <meta property="og:image:alt" content="Seal Sounds logo" key="og:image:alt" />, */}
       
       <meta name='twitter:title' content={title} />
