@@ -1,6 +1,6 @@
 import {
     faFacebook,
-    faTwitter,
+    // faTwitter,
     faLinkedin,
     faGooglePlay,
     faAppStore
@@ -14,14 +14,14 @@ export const FBLink = () => (
     </a>
 );
 
-export const TwitterLink = () => (
-    <a href="https://twitter.com/soundsseal" >
-        <FontAwesomeIcon icon={faTwitter} />
-    </a>
-);
+// export const TwitterLink = () => (
+//     <a href="https://twitter.com/soundsseal" >
+//         <FontAwesomeIcon icon={faTwitter} />
+//     </a>
+// );
 
 export const LinkedInLink = () => (
-    <a href="https://linkedin.com/sealsoundsapp" >
+    <a href="https://www.linkedin.com/company/sealsoundsapp" >
         <FontAwesomeIcon icon={faLinkedin} />
     </a>
 );
