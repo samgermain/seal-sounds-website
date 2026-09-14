@@ -32,8 +32,8 @@ const styles = {
     }
 };
 
-const SocialLinks = () => (
-    <div className="w-100 d-flex align-items-center justify-content-center">
+const SocialLinks = ({className, ...props}) => (
+    <div className={`w-100 d-flex align-items-center justify-content-center ${className}`} {...props}>
         <div style={styles.bottom}>
             <div 
                 style={styles.icons} 
@@ -102,9 +102,9 @@ const IndexPage = ({data}) => {
         <div style={{backgroundColor: "black"}}>
             <Seo 
                 title="Seal Sounds"
-                desc="Seal Sounds, a must have mobile app that lets you hear seal voices!"
-                image="https://sealsounds.netlify.app/static/95dc766cf62d4841a4f3b5f9099150a4/f3583/seal-with-whiskers.png"
-                url="https://sealsounds.netlify.app"
+                desc="Seal Sounds, a website that lets you hear seal voices!"
+                image="https://sealsounds.site/static/95dc766cf62d4841a4f3b5f9099150a4/f3583/seal-with-whiskers.png"
+                url="https://sealsounds.site"
             />
             <div>
                 <div className="d-flex flex-column">
@@ -117,19 +117,27 @@ const IndexPage = ({data}) => {
                     </div>
                     <Soundboard sounds={soundFiles[sealType]}></Soundboard>
                     <div className="position-relative">
-                        <SpaceVideo />
-                        <div id='container'>
-                            <div id="text" className="mt-2">
+                        {/* <SpaceVideo /> */}
+                        <div className="d-flex justify-content-around flex-column flex-md-row w-100">
+                            {/* <div id="text" className="mt-2">
                                 <App />
                                 <EmailPrivacyPolicy />
+                            </div> */}
+                            <div className="w-50 d-flex justify-content-center align-items-center mx-auto my-5">
+                                <Seal2Animation />
                             </div>
-                            <div id="spinning-circle">
-                                <div id="inner-circle">
+                            <div id="spinning-circle" className="w-50 my-5">
+                                <div id="inner-circle" className="mx-auto d-flex justify-content-center">
                                     <Seal1Animation />
                                 </div>
                             </div>
                         </div>
+                        <div className="my-5">
+                            <SocialLinks    />
+                        </div>
+                        <div style={{height: "100px"}}></div>
                     </div>
+                    <div style={{height: "100px"}}></div>
                     {/* <div id="cover">LOADING</div> */}
                 </div>
             </div>

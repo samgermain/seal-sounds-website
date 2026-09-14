@@ -10,7 +10,7 @@ import React from 'react';
 
 export const FBLink = () => (
     <a href="https://www.facebook.com/SealSounds">
-        <FontAwesomeIcon icon={faFacebook} />
+        <FontAwesomeIcon size="2x" icon={faFacebook} />
     </a>
 );
 
@@ -22,7 +22,7 @@ export const FBLink = () => (
 
 export const LinkedInLink = () => (
     <a href="https://www.linkedin.com/company/sealsoundsapp" >
-        <FontAwesomeIcon icon={faLinkedin} />
+        <FontAwesomeIcon size="2x" icon={faLinkedin} />
     </a>
 );
 
