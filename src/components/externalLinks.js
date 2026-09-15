@@ -1,15 +1,17 @@
 import {
     faFacebook,
     // faTwitter,
-    faLinkedin,
-    faGooglePlay,
-    faAppStore
+    faTiktok,
+    faInstagram,
+    // faLinkedin,
+    // faGooglePlay,
+    // faAppStore
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon,  } from '@fortawesome/react-fontawesome'
 import React from 'react';
 
 export const FBLink = () => (
-    <a href="https://www.facebook.com/SealSounds">
+    <a href="https://www.facebook.com/samwhow.art">
         <FontAwesomeIcon size="2x" icon={faFacebook} />
     </a>
 );
@@ -20,32 +22,44 @@ export const FBLink = () => (
 //     </a>
 // );
 
-export const LinkedInLink = () => (
-    <a href="https://www.linkedin.com/company/sealsoundsapp" >
-        <FontAwesomeIcon size="2x" icon={faLinkedin} />
+export const TikTokLink = () => (
+    <a href="https://www.tiktok.com/@samwhow" >
+        <FontAwesomeIcon size="2x" icon={faTiktok} />
     </a>
 );
 
-export const AppStoreLink = () => (
-    <a 
-        href="/"
-        id="app-store-link" 
-        disabled={true}
-    >
-        <FontAwesomeIcon size="2x" icon={faAppStore} />
-        <span className="link-text">App Store</span>
-        <span>Currently Unavailable</span>
+export const InstagramLink = () => (
+    <a href="https://www.instagram.com/samwhow/" >
+        <FontAwesomeIcon size="2x" icon={faInstagram} />
     </a>
 );
 
-export const GooglePlayLink = () => (
-    <a
-        href="https://play.google.com/store/apps/details?id=com.samgermain.sealsoundsapp&hl=en"
-        id="google-play-link"
-        disabled={true}
-    >
-        <FontAwesomeIcon size="2x" icon={faGooglePlay} />
-        <span className="link-text">Google Play</span>
-        <span>Currently Unavailable</span>
-    </a>
-);
+// export const LinkedInLink = () => (
+//     <a href="https://www.linkedin.com/company/sealsoundsapp" >
+//         <FontAwesomeIcon size="2x" icon={faLinkedin} />
+//     </a>
+// );
+
+// export const AppStoreLink = () => (
+//     <a 
+//         href="/"
+//         id="app-store-link" 
+//         disabled={true}
+//     >
+//         <FontAwesomeIcon size="2x" icon={faAppStore} />
+//         <span className="link-text">App Store</span>
+//         <span>Currently Unavailable</span>
+//     </a>
+// );
+
+// export const GooglePlayLink = () => (
+//     <a
+//         href="https://play.google.com/store/apps/details?id=com.samgermain.sealsoundsapp&hl=en"
+//         id="google-play-link"
+//         disabled={true}
+//     >
+//         <FontAwesomeIcon size="2x" icon={faGooglePlay} />
+//         <span className="link-text">Google Play</span>
+//         <span>Currently Unavailable</span>
+//     </a>
+// );

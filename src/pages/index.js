@@ -5,7 +5,7 @@ import { Link, graphql } from "gatsby";
 
 import {EmailForm, Seo, Seal2Animation, Seal1Animation, Soundboard, soundFiles} from '../components'
 import SpaceVideo from "../components/SpaceVideo";
-import { FBLink, LinkedInLink, GooglePlayLink, AppStoreLink } from "../components/externalLinks";
+import { InstagramLink, TikTokLink, FBLink, GooglePlayLink, AppStoreLink } from "../components/externalLinks";
 
 const styles = {
     bottom:{
@@ -39,9 +39,9 @@ const SocialLinks = ({className, ...props}) => (
                 style={styles.icons} 
                 className="d-flex justify-content-between align-items-center mb-3"
             >
+                <InstagramLink />
                 <FBLink />
-                {/* <TwitterLink /> */}
-                <LinkedInLink />
+                <TikTokLink />
             </div>               
         </div>
     </div>
