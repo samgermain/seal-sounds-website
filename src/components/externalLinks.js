@@ -22,11 +22,11 @@ export const FBLink = () => (
 //     </a>
 // );
 
-export const TikTokLink = () => (
-    <a href="https://www.tiktok.com/@samwhow" >
-        <FontAwesomeIcon size="2x" icon={faTiktok} />
-    </a>
-);
+// export const TikTokLink = () => (
+//     <a href="https://www.tiktok.com/@samwhow" >
+//         <FontAwesomeIcon size="2x" icon={faTiktok} />
+//     </a>
+// );
 
 export const InstagramLink = () => (
     <a href="https://www.instagram.com/samwhow/" >
