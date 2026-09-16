@@ -91,7 +91,7 @@ const IndexPage = ({data}) => {
 
     const SealTypeButton = ({name}) => (
         <button
-            className="seal-type-button"
+            className={`seal-type-button rounded px-4 ${sealType === name ? 'active' : ''}`}
             onClick={() => setSealType(name)}
         >
             {name}

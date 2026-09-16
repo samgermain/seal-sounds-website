@@ -8,6 +8,10 @@ body{
 
 @debug 'test';
 
+.active {
+    background-color: rgb(255 255 255 / 25%) !important;
+}
+
 .background-video{
     height: auto;
     width: 100%;
